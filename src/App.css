@@ -2,6 +2,10 @@
   text-align: center;
 }
 
+::selection {
+  background: #ffb7b7; /* WebKit/Blink Browsers */
+}
+
 .App-header {
   background-color: #282c34;
   min-height: 10vh;
@@ -17,6 +21,22 @@
   color: #61dafb;
 }
 
+.NavbarLink {
+  flex: 1 1 auto;
+  color: #ffa3d5;
+  transition: color 800ms linear;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.NavbarLink:hover {
+  flex: 1 1 auto;
+  color: #fadfed;
+  transition: color 800ms linear;
+  text-decoration: none;
+  cursor: pointer;
+}
+
 #headerBar {
   background-color: #554c5df6;
   display: flex;
@@ -24,6 +44,27 @@
 
 #mainSection {
   background-color: #292929f6;
+}
+
+#aboutSection {
+  background-color: #292929f6;
+  color: #ffa3d5;
+}
+
+#aboutHeader {
+  background-color: #353434f6;
+  color: #ffa3d5;
+  padding-top: 20px;
+  padding-bottom: 7px;
+}
+
+#aboutContent {
+  background-color: #353434f6;
+  color: #ffa3d5;
+  padding-top: 7px;
+  padding-left: 17%;
+  padding-right: 17%;
+  padding-bottom: 40px;
 }
 
 .Post {
@@ -34,16 +75,20 @@
 .PostWrapper {
   display: block;
   background-color: #353434f6;
+  padding: 20px;
+  cursor: pointer;
+  transition: background-color 800ms linear;
 }
-.PostWrapper:hover{
+.PostWrapper:hover {
   background-color: #5e0175e7;
   display: block;
+  cursor: pointer;
+  transition: background-color 800ms linear;
 }
 
-.PostHeader{
-  padding-top: 10px;
+.PostHeader {
 }
 
-.PostBody{
+.PostBody {
   padding-bottom: 10px;
 }
